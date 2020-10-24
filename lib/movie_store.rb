@@ -31,7 +31,7 @@ class MovieStore
         # Get the highest existing id
         # or assign 0 if it is the first movie
         highest_id = @store.roots.max || 0
-        movie.id = highest_id
+        movie.id = highest_id + 1
       end
 
       # Store the movie in the file with the assigned id
