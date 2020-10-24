@@ -1,0 +1,21 @@
+---
+0: !ruby/object:Movie
+  title: Gemini project
+  director: Will smith
+  year: '2019'
+  id: 0
+1: !ruby/object:Movie
+  title: Where the wild things are
+  director: I don't know
+  year: '2006'
+  id: 1
+2: !ruby/object:Movie
+  title: Mission Impossible III
+  director: Unknown director
+  year: '2010'
+  id: 2
+3: !ruby/object:Movie
+  title: John Wick
+  director: Great director
+  year: '2018'
+  id: 3
