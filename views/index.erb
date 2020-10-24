@@ -1,19 +1,27 @@
 <html>
   <head>
     <title>My Movies</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>Movies List</h1>
-    <ul>
-      <% @movies.each do |movie| %>
-        <li>
-          <a href='/movies/<%= movie.id %>'>
+    <div class="container">
+      <h1>Movies List</h1>
+
+      <div class="list-group">
+        <% @movies.each do |movie| %>
+          <a href="/movies/<%= movie.id %>" class="list-group-item">
             <%= movie.title %>
           </a>
-        </li>
-      <% end %>
-    </ul>
-    <br />
-    <a href='/movies/new'>Add new movie</a>
+        <% end %>
+      </div>
+
+      <br />
+      <a href='/movies/new' class="btn btn-info">Add new movie</a>
+    </div>
   </body>
 </html>

@@ -1,29 +1,44 @@
 <html>
   <head>
     <title>Add new movie</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   </head>
   <body>
-    <h1>Add new movie</h1>
-    <form method="post" action="/movies/create">
-      <table>
-        <tr>
-          <td> <label for="title">Title</label> </td>
-          <td> <input type="text" name="title"> </td>
-        </tr>
-        <tr>
-          <td> <label for="director">Director</label> </td>
-          <td> <input type="text" name="director"> </td>
-        </tr>
-        <tr>
-          <td> <label for="year">Year</label> </td>
-          <td> <input type="text" name="year"> </td>
-        </tr>
-        <tr>
-          <td><input type="submit"></td>
-        </tr>
-      </table>
-    </form>
-    <br />
-    <a href='/movies'>All movies</a>
+    <div class="container">
+      <h1>Add new movie</h1>
+      <form method="post" action="/movies/create">
+        <table class="table table-bordered">
+          <tr>
+            <div class="form-group">
+              <td> <label for="title">Title</label> </td>
+              <td> <input type="text" class="form-control" name="title"> </td>
+            </div>
+          </tr>
+          <tr>
+            <div class="form-group">
+              <td> <label for="director">Director</label> </td>
+              <td> <input type="text" class="form-control" name="director"> </td>
+            </div>
+          </tr>
+          <tr>
+            <div class="form-group">
+              <td> <label for="year">Year</label> </td>
+              <td> <input type="text" class="form-control" name="year"> </td>
+            </div>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="submit" class="btn btn-primary"></td>
+          </tr>
+        </table>
+      </form>
+      <br />
+      <a href='/movies' class="btn btn-info">All movies</a>
+    </div>
   </body>
 </html>

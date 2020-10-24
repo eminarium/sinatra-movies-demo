@@ -1,24 +1,33 @@
 <html>
   <head>
     <title>My Movies - <%= @movie.title %></title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   </head>
   <body>
-    <h1>Movie Info</h1>
-    <table>
-      <tr>
-        <td> Title </td>
-        <td> <%= @movie.title %> </td>
-      </tr>
-      <tr>
-        <td> Director </td>
-        <td> <%= @movie.director %> </td>
-      </tr>
-      <tr>
-        <td> Year </td>
-        <td> <%= @movie.year %> </td>
-      </tr>
-    </table>
-    <br />
-    <a href='/movies'>All movies</a>
+    <div class="container">
+      <h1>Movie Info</h1>
+      <table class="table table-hover">
+        <tr>
+          <th> Title </th>
+          <td> <%= @movie.title %> </td>
+        </tr>
+        <tr>
+          <th> Director </th>
+          <td> <%= @movie.director %> </td>
+        </tr>
+        <tr>
+          <th> Year </th>
+          <td> <%= @movie.year %> </td>
+        </tr>
+      </table>
+      <br />
+      <a href='/movies' class="btn btn-info">All movies</a>
+    </div>
   </body>
 </html>
