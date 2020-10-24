@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Add new movie</title>
+  </head>
+  <body>
+    <h1>Add new movie</h1>
+    <form method="post" action="/movies/create">
+      <table>
+        <tr>
+          <td> <label for="title">Title</label> </td>
+          <td> <input type="text" name="title"> </td>
+        </tr>
+        <tr>
+          <td> <label for="director">Director</label> </td>
+          <td> <input type="text" name="director"> </td>
+        </tr>
+        <tr>
+          <td> <label for="year">Year</label> </td>
+          <td> <input type="text" name="year"> </td>
+        </tr>
+        <tr>
+          <td><input type="submit"></td>
+        </tr>
+      </table>
+    </form>
+    <br />
+    <a href='/movies'>All movies</a>
+  </body>
+</html>
