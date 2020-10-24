@@ -26,7 +26,7 @@ post('/movies/create') do
 end
 
 get('/movies/:id') do
-  id = params[:id]
+  id = params[:id].to_i
   @movie = store.find(id)
   erb :show
 end
