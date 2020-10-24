@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>My Movies - <%= @movie.title %></title>
+  </head>
+  <body>
+    <h1>Movie Info</h1>
+    <table>
+      <tr>
+        <td> Title </td>
+        <td> <%= @movie.title %> </td>
+      </tr>
+      <tr>
+        <td> Director </td>
+        <td> <%= @movie.director %> </td>
+      </tr>
+      <tr>
+        <td> Year </td>
+        <td> <%= @movie.year %> </td>
+      </tr>
+    </table>
+    <br />
+    <a href='/movies'>All movies</a>
+  </body>
+</html>
