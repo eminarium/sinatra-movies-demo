@@ -18,4 +18,14 @@ class MovieStore
     end
   end
 
+  def save(movie)
+    @store.transaction do
+      unless movie.id
+        highest_id = @store.roots.max || 0
+        movie.id = highest_id
+      end
+      @store[movie.id] = movie
+    end
+  end
+
 end
