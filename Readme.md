@@ -4,7 +4,9 @@ A movies catalogue web app using sinatra ruby framework and Yaml format file sto
 Author : Merdan Durdyýew  
 Github : https://github.com/eminarium  
 Medium (Personal blog) : https://medium.com/@merdan.durdiyev  
-Medium (Publication) : https://medium.com/kodeser  
+Medium (Publication-Turkmen content) : https://medium.com/kodeser  
+Medium (Publication-English content) : https://medium.com/kode-art  
+Dev.to (Blog - English content) https://dev.to/eminarium  
 Date : 25.10.2020  
 
 Description : "Sinatra-movies-demo" - is a web application using 'sinatra' framework  
