@@ -1,5 +1,8 @@
 require 'yaml/store'
 
+# It is a class that works with the storage file
+# where we store movies list in YAML format.
+# We make use of 'YAML::Store' class to work with the file.
 class MovieStore
 
   # Initializes movie storage file with the given filename
